@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avocado Homestay | Your Green Getaway</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            color: #333;
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+
+        /* Navigation */
+        nav {
+            background: #fff;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 90%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #4CAF50;
+        }
+
+        nav a {
+            text-decoration: none;
+            margin-left: 20px;
+            color: #555;
+            font-weight: 500;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+                        url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1600&q=80');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero h1 { font-size: 4rem; margin-bottom: 0.5rem; }
+        .hero p { font-size: 1.5rem; margin-bottom: 2rem; }
+
+        .btn {
+            background: #76ba1b;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: 0.3s;
+        }
+
+        .btn:hover { background: #5a8f15; }
+
+        /* Sections */
+        section { padding: 80px 10%; text-align: center; }
+        h2 { color: #2e4d2e; margin-bottom: 40px; font-size: 2.5rem; }
+
+        /* Gallery Grid */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .gallery img:hover { transform: scale(1.05); }
+
+        /* Services */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            padding: 20px;
+            background: #f9fdf4;
+            border-radius: 15px;
+            border: 1px solid #e0ebd2;
+        }
+
+        .service-card i { font-size: 2rem; color: #76ba1b; }
+
+        /* Contact */
+        .footer { background: #2e4d2e; color: white; padding: 40px 10%; text-align: center; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">🥑 AVOCADO</div>
+        <div>
+            <a href="#about">About</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>Welcome Home.</h1>
+        <p>Experience the freshness of nature at Avocado Homestay.</p>
+        <a href="#contact" class="btn">Book Your Stay</a>
+    </section>
+
+    <section id="about">
+        <h2>Our Little Slice of Paradise</h2>
+        <p>Nestled in the heart of the valley, Avocado Homestay offers a unique blend of modern comfort and rustic charm. Whether you're here to recharge or explore, we provide the perfect "pit" stop for your journey.</p>
+    </section>
+
+    <section id="gallery">
+        <h2>A Glimpse of Peace</h2>
+        <div class="gallery">
+            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=500&q=60" alt="Room">
+            <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=500&q=60" alt="Pool">
+            <img src="https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=500&q=60" alt="Breakfast">
+            <img src="https://images.unsplash.com/photo-1445019980597-93fa8acb246c?auto=format&fit=crop&w=500&q=60" alt="Lounge">
+        </div>
+    </section>
+
+    <section id="services">
+        <h2>Included Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>☕ Organic Breakfast</h3>
+                <p>Farm-to-table meals including our signature avocado toast.</p>
+            </div>
+            <div class="service-card">
+                <h3>📶 High-Speed Wi-Fi</h3>
+                <p>Stay connected even while you're getting away from it all.</p>
+            </div>
+            <div class="service-card">
+                <h3>🚲 Free Bicycles</h3>
+                <p>Explore the local trails and village at your own pace.</p>
+            </div>
+            <div class="service-card">
+                <h3>🛁 Private Garden Bath</h3>
+                <p>Relax in our outdoor stone tubs under the stars.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" id="contact">
+        <h2>Ready to Visit?</h2>
+        <p>123 Green Valley Lane, Nature Reserve</p>
+        <p>Email: hello@avocadohomestay.com | Phone: +1 234 567 890</p>
+        <br>
+        <p>&copy; 2026 Avocado Homestay. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
